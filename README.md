@@ -54,7 +54,7 @@ A custom extractor computes **34 features** in three groups:
 ## Repository Structure
 
 ```text
-├── AIDetext.py                       # Main script (full pipeline)
+├── ai_text_detection_notebook.ipynb  # Full experimental pipeline
 ├── balanced_sample_70k.parquet       # Balanced 70,000-text sample
 ├── split_train.parquet               # Training split
 ├── split_val.parquet                 # Validation split
@@ -76,24 +76,27 @@ A custom extractor computes **34 features** in three groups:
 ## Installation and Usage
 
 ### 1. Clone the repository
+
 ```bash
-git clone <your-repository-url>
-cd <repository-folder>
+git clone https://github.com/HarelKoren/AI-Text-Detection.git
+cd AI-Text-Detection
 ```
 
 ### 2. Install dependencies
+
 ```bash
 pip install torch transformers scikit-learn pandas pyarrow matplotlib seaborn tqdm gradio
 ```
 
 ### 3. Run the pipeline
-```bash
-python AIDetext.py
-```
+
+Open `ai_text_detection_notebook.ipynb` in Google Colab or Jupyter Notebook and run the cells in order.
+
 The project was developed and tested on Google Colab with a T4 GPU. Training DistilBERT on a CPU is not practical.
 
 ### 4. Web interface
-The project includes a Gradio interface for classifying new texts. After running it, open the public link that is printed in the console. The interface shows the predicted class with a confidence percentage.
+
+The project includes a Gradio interface for classifying new texts. After running the notebook, open the public link that is printed in the console. The interface shows the predicted class with a confidence percentage.
 
 ## Limitations
 
