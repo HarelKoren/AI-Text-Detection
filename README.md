@@ -54,23 +54,8 @@ A custom extractor computes **34 features** in three groups:
 ## Repository Structure
 
 ```text
-├── ai_text_detection_notebook.ipynb  # Full experimental pipeline
-├── balanced_sample_70k.parquet       # Balanced 70,000-text sample
-├── split_train.parquet               # Training split
-├── split_val.parquet                 # Validation split
-├── split_test.parquet                # Test split
-├── rf_misclassified.csv              # Random Forest errors
-├── transformer_misclassified.csv     # DistilBERT errors
-├── common_misclassified.csv          # Errors shared by both models
-├── model_comparison_summary.csv      # Side-by-side metrics
-├── rf_confusion_matrix.png
-├── rf_feature_importance.png
-├── rf_roc_curves.png
-├── pca_2d_visualization.png
-└── outputs/
-    ├── best_model.pt                 # Best DistilBERT weights
-    ├── training_curves.png           # Loss, accuracy, F1 and AUC over epochs
-    └── tokenizer/                    # Saved tokenizer
+├── README.md
+└── ai_text_detection_notebook.ipynb 
 ```
 
 ## Installation and Usage
