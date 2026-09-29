@@ -42,12 +42,13 @@ The experimental results demonstrate a classic engineering trade-off between pre
 
 | Metric | Random Forest (Classical ML) | DistilBERT (Transformer) | Winner |
 | :--- | :---: | :---: | :---: |
-| **Accuracy** | ~92.40% | **~98.95%** | **Transformer** |
-| **Precision (AI)** | High | **Maximum** | **Transformer** |
-| **Recall (AI)** | High | **Maximum** | **Transformer** |
-| **F1-Score** | ~0.9230 | **~0.9890** | **Transformer** |
-| **ROC-AUC** | ~0.9750 | **~0.9985** | **Transformer** |
-| **Training Time** | **Seconds** | ~20 minutes (GPU) | **Random Forest** |
+| **Accuracy** | 89.24% | **95.77%** | **Transformer** |
+| **Precision** | 0.8507 | **0.9294** | **Transformer** |
+| **Recall** | 0.9518 | **0.9907** | **Transformer** |
+| **F1 Score** | 0.8984 | **0.9591** | **Transformer** |
+| **ROC-AUC** | 0.9580 | **0.9859** | **Transformer** |
+| **Train Time** | **21.5 sec** | ~20 min (GPU) | **RF** |
+
 
 ### Key Takeaways
 * **Transformer Superiority:** DistilBERT achieves near-perfect classification scores by deeply capturing contextual and semantic boundaries that hardcoded features miss.
